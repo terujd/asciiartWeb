@@ -7,33 +7,51 @@
     <title>Ascii art web</title>
     <link rel="stylesheet" type="text/css" href="/css/index.css" />
     <link rel="stylesheet" type="text/css" href="/css/buttons.css" />
+    <link rel="stylesheet" type="text/css" href="/css/textanimations.css" />
   </head>
-
   <body>
     <div id="header">
-      <h1 class="post-header_title">Ascii art web</h1>
+      <h1 class="post-header_title" id="headerTitle">Ascii art web</h1>
     </div>
-    <form action="/ascii-art" method="POST">
-      <div class="container">
-        <div class="textarea"
+    <br>
+    <form action="/ascii-art" id="post" method="POST">
+        <textarea
           name="inputText"
           id="inputText"
-          placeholder="Enter text here"
-          position=""
-        ></div>
-      </div>
-    </form>
-          <label for="font">Choose a Font:</label>
-        <select name="font" id="font">
-        <optgroup label="default">
+          placeholder="type text here please"
+          position="relative"
+        ></textarea>
+        <br>
+        <br>
+      <label for="font" id="font1">Choose a Font:
+        <select name="font" id="font2">
+          <optgroup label="default">
           <option value="standard">Standard</option>
-        </optgroup>
-        <option value="shadow">Shadow</option>
-        <option value="thinkertoy">Thinkertoy</option>
-      </select>
-    <button class="neon-button">submit</button>
-      <div class="output">
-        <pre class="output" scrolling="yes">{{.}}</pre>
+            
+              <option value="shadow">Shadow</option>
+                <option value="thinkertoy">Thinkertoy</option>
+                </optgroup>
+        </select>
+        </label>
+        <br>
+        <br>
+      <div id="main">
+        <button class="neon-button" id="Submit">Submit</button>
+        </form>
+        <br>
+        <br>
+        <textarea class="output" id="output" scrolling="yes" readonly>{{.}}</textarea>
+        <br>
+        <br>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <h3 class="animate-character">Made by: Björn, Maryam & Micke</h3>
+            </div>
+          </div>
+        </div>
+        </div>
       </div>
+    </div>
   </body>
 </html>
