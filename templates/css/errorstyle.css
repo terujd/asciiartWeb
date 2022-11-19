@@ -1,43 +1,65 @@
 * {
-    transition: all 0.6s;
-  }
+  transition: all 1.0s;
+}
 
-  html {
-    height: 100%;
-  }
+html {
+  height: 100%;
+}
 
-  body {
-    font-family: "Lato", sans-serif;
-    color: #210210;
-    margin: 0;
-  }
+body {
+  font-family: "Lato", sans-serif;
+  color: #210210;
+  margin: 0;
+}
 
-  #main {
-    display: table;
-    width: 100%;
-    height: 100vh;
-    text-align: center;
-    background: rgb(255,255,255);
-    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,185,212,1) 47%, rgba(246,248,249,1) 100%);
-  }
+#main {
+  display: table;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  background: rgb(255,255,255);
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,185,212,1) 47%, rgba(246,248,249,1) 100%);
+}
 
-  .error {
-    display: table-cell;
-    vertical-align: middle;
-  }
+.error {
+  display: table-cell;
+  vertical-align: middle;
+}
 
-  .error h1 {
-    font-size: 50px;
-    display: inline-block;
-    padding-right: 12px;
-    animation: type 0.5s alternate infinite;
-  }
+.error h1 {
+  text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary),
+  9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
+font-family: 'Times New Roman', Times, serif, sans-serif;
+font-weight: 400;
+text-transform: uppercase;
+font-size: calc(2rem + 5vw);
+text-align: center;
+margin: 0;
+color: var(--color-primary);
+/*color: transparent;
+background-color: white;
+background-clip: text;*/
+animation: shadows 1.2s ease-in infinite, move 1.2s ease-in infinite;
+letter-spacing: 0.4rem;
 
-  @keyframes type {
-    from {
-      box-shadow: inset -3px 0px 0px #888;
-    }
-    to {
-      box-shadow: inset -3px 0px 0px transparent;
-    }
-  }
+}
+
+h3 {
+  text-shadow: 3px 3px 0 var(--color-quaternary), 6px 6px 0 var(--color-tertiary),
+  9px 9px var(--color-secondary), 12px 12px 0 var(--color-primary);
+font-family: 'Times New Roman', Times, serif, sans-serif;
+font-weight: 400;
+text-transform: uppercase;
+font-size: calc(2rem + 5vw);
+text-align: center;
+margin: 0;
+color: var(--color-quaternary);
+/*color: transparent;
+background-color: white;
+background-clip: text;*/
+animation: shadows 1.2s ease-in infinite, move 1.2s ease-in infinite;
+letter-spacing: 0.4rem;
+
+}
+
+
