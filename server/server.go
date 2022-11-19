@@ -67,7 +67,6 @@ func Post(w http.ResponseWriter, r *http.Request) error {
 
 	content := r.FormValue("inputText")
 	font := r.FormValue("font")
-
 	result, err := ascii.Printer(content, font)
 	if err != nil {
 		data := Data{
